@@ -38,12 +38,24 @@ public class Coffee {
 	@Column(name = "TASTE_PROFILE")
 	private String tasteProfile;
 
+	@Column(name = "BALANCE")
+	private String balance;
+
 	@Column(name = "ORIGIN_COUNTRY")
 	@Enumerated(EnumType.STRING)
 	private Country originCountry;
 
 	@Column(name = "ORIGIN_REGION")
 	private String originRegion;
+
+	@Column(name = "VARIETY")
+	private String variety;
+
+	@Column(name = "PROCESSING")
+	private String processing;
+
+	@Column(name = "YEAR")
+	private Integer year;
 
 	@ElementCollection
 	@CollectionTable(name = "PACK", joinColumns = @JoinColumn(name = "COFFEE_ID"))
