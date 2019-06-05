@@ -11,7 +11,7 @@ public enum Keyword {
 
 	NAME(emptyList()),
 	DESCRIPTION(emptyList()),
-	ROASTING_TYPE(singletonList("Обсмажка")),
+	ROAST_TYPE(singletonList("Обсмажка")),
 	TASTE_PROFILE(singletonList("Смаковий профіль")),
 	BALANCE(singletonList("Баланс смаку")),
 	PROCESSING(singletonList("Обробка")),

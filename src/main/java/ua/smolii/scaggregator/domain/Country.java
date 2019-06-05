@@ -3,6 +3,7 @@ package ua.smolii.scaggregator.domain;
 import static java.util.Collections.emptyList;
 import static java.util.Collections.singletonList;
 
+import java.util.Arrays;
 import java.util.List;
 
 import lombok.Getter;
@@ -51,5 +52,12 @@ public enum Country {
 
 	Country(List<String> wordings) {
 		this.wordings = wordings;
+	}
+
+	public static Country fromWording(String wording) {
+		return Arrays.stream(Country.values())
+				.filter(country -> country.getWordings().contains(wording))
+				.findFirst()
+				.orElse(null);
 	}
 }

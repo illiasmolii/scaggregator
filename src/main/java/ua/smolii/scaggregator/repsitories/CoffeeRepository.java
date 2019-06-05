@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import ua.smolii.scaggregator.domain.Coffee;
 
 @Repository
-public interface CoffeeRepository extends PagingAndSortingRepository<Long, Coffee> {
+public interface CoffeeRepository extends PagingAndSortingRepository<Coffee, Long> {
 }
